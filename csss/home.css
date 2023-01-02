@@ -1,0 +1,57 @@
+:root{
+    --min-containrt-le: 50px;
+    --min-containrt-ri: 50px;
+
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: relative;
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+.container{
+    padding: 20px 0;
+    position: relative;
+    padding-left: var(--min-containrt-le);
+    padding-right: var(--min-containrt-ri);
+}
+.container .prg{
+    position: absolute;
+    color: white;left: 20px;
+
+}
+.header .imgs{
+    position: absolute;
+    top: -50px;
+
+}
+.container .imgs{
+
+}
+nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container .prg{
+
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 10px;
+}
