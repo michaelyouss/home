@@ -1,13 +1,15 @@
-:root{
-    --min-containrt-le: 50px;
-    --min-containrt-ri: 50px;
+:root {
+    --min-containet-le: 50px;
+    --min-containet-ri: 50px;
 
 }
-*{
+
+* {
     margin: 0;
     box-sizing: border-box;
 }
-.header{
+
+.header {
     position: relative;
     background-image: url(../img/img1.jpg);
     background-size: cover;
@@ -15,43 +17,130 @@
     height: 100vh;
     background-position: center;
 }
-.container{
+
+.container {
     padding: 20px 0;
     position: relative;
-    padding-left: var(--min-containrt-le);
-    padding-right: var(--min-containrt-ri);
+    padding-left: var(--min-containet-le);
+    padding-right: var(--min-containet-ri);
 }
-.container .prg{
-    position: absolute;
-    color: white;left: 20px;
 
-}
-.header .imgs{
-    position: absolute;
-    top: -50px;
-
-}
-.container .imgs{
-
-}
 nav {
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    
-}
-.container .prg{
 
 }
-nav ul{
+
+nav ul {
     display: flex;
 }
 
-nav ul li{
+.container .logo .loogo {
+    color: white;
+    font-size: 20px;
+}
+
+.container .prg {
+    position: absolute;
+    color: white;
+    left: 30px;
+    top: 5px;
+
+}
+
+.header nav ul li {
     list-style: none;
 }
-nav ul li a{
+
+.header nav ul li a {
+    padding-left: 10px;
+    color: white;
+    transition: .5s;
     text-decoration: none;
-    margin: 10px;
+    margin-left: 10px;
 }
+.header nav ul li a:hover{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: black;
+}
+.header nav ul li .get{
+    color: black;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+
+.header .imgs {
+    position: absolute;
+    top: -50px;
+}
+.header .landing{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+.header .landing h2{
+    position: relative;
+    width: 320px;
+    padding-left: var(--min-containet-le);
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: -5px;
+}
+.header .landing p{
+    font-size: 15px;
+    padding-left: var(--min-containet-le);
+    position: relative;
+    line-height: -8px;
+}
+.header .inpot{
+    position: relative;
+    top: 375px;
+    padding-left: 50px;
+    
+}
+.header .inpot a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 35px;
+    border-radius: 30px;
+}
+/*Start pricing*/
+.pricing .container .pric{
+    position: relative;
+    /*display: flex;
+    align-items: center;
+    justify-content:space-between;*/
+    top: 100px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+}
+.pricing .container .pric .icon{
+    font-size: 30px;
+    color: #000;
+    padding-bottom: 10px;
+}
+.pricing .container .pric .pr{
+   text-align: center;
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+.pricing .container .pric h3{
+font-size: 25px;
+padding-bottom: 20px;
+}
+.pricing .container .pric p{
+    color: #777;
+    line-height: 20px;
+}
+/*End pricing*/
