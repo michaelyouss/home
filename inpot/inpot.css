@@ -1,0 +1,60 @@
+body{
+    background-color: green;
+}
+.text{
+    text-align: center;
+}
+
+
+
+
+
+
+
+.text1{
+    color: red;
+    font-weight:900;
+
+}
+.text1:hover{
+    margin-left: 500px;
+}
+.img .container {
+    position: relative;
+}
+.img .container img{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid red;
+}
+ul{
+    position: absolute;
+    top:700px;
+    left: 1100px;
+    direction: rtl;
+    color: rgb(255, 0, 0);
+ 
+}
+ul li{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+tr{
+    display: block;
+}
+table   {
+    font-size: 30px;
+    position: relative;
+color: rgb(0, 0, 0);
+border:1px solid rgb(8, 8, 8);
+   
+}
+td{
+    padding-left: 30px;
+    position: relative;
+    border-bottom: 1px solid rgb(3, 3, 3);
+    width: 100%;
+}
